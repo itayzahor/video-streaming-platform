@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+
+
+    <color name="lightColorPrimary">#FF0000</color>         <!-- Buttons color -->
+    <color name="lightColorPrimaryDark">#FF0000</color>     <!-- color of the thing in the top of the phone -->
+    <color name="lightColorAccent">#FF0000</color>          <!-- media player color -->
+
+    <!-- Dark Mode Colors -->
+    <color name="darkColorPrimary">#333333</color> <!-- buttons color -->
+    <color name="darkColorPrimaryDark">#333333</color> <!-- color of the thing in the top of the phone -->
+    <color name="darkColorAccent">#FFFF0000</color> <!-- media player color -->
+    <color name="darkBackgroundColor">#666666</color> <!-- background color for dark mode -->
+</resources>

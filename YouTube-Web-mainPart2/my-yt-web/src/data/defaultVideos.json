@@ -1,0 +1,141 @@
+[
+    {
+       
+        "title": "boat",
+        "author": "tomu2611",
+        "authorDisplayName": "Tom",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 21000,
+        "photo": "/photos/boat.jpg",
+        "path": "/videos/boat.mp4",
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+       
+        "title": "buildings",
+        "author": "tomu2611",
+        "authorDisplayName": "Tom",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 20300,
+        "photo": "/photos/buildings.jpg",
+        "path":"/videos/buildings.mp4",
+        
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+       
+        "title": "ferris_wheel",
+        "author": "tomu2611",
+        "authorDisplayName": "Tom",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 3000,
+        "photo": "/photos/ferris_wheel.jpg",
+        "path": "/videos/ferris_wheel.mp4",
+        
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+        "title": "girl_flowers",
+        "author": "tomu2611",
+        "authorDisplayName": "Tom",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 4000,
+        "photo": "/photos/girl_flowers.jpg",
+        "path": "/videos/girl_flowers.mp4",
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+        "title": "hard_rock_cafe",
+        "author": "tomu2611",
+        "authorDisplayName": "Tom",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 5000,
+        "photo": "/photos/hard_rock_cafe.jpg",
+        "path": "/videos/hard_rock_cafe.mp4",
+       
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+       
+        "title": "hilton",
+        "author": "tim12345",
+        "authorDisplayName": "estiCocus",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 6000,
+        "photo": "/photos/hilton.jpg",
+        "path": "/videos/hilton.mp4",
+        
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+        
+        "title": "keyboard",
+        "author": "tim12345",
+        "authorDisplayName": "estiCocus",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 7000,
+        "photo": "/photos/keyboard.jpg",
+        "path": "/videos/keyboard.mp4",
+       
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+       
+        "title": "kite",
+        "author": "tim12345",
+        "authorDisplayName": "estiCocus",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 8000,
+        "photo": "/photos/kite.jpg",
+        "path": "/videos/kite.mp4",
+       
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+        
+        "title": "men_sunset",
+        "author": "tim12345",
+        "authorDisplayName": "estiCocus",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 9000,
+        "photo": "/photos/men_sunset.jpg",
+        "path": "/videos/men_sunset.mp4",
+        
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+        
+        "title": "road",
+        "author": "tim12345",
+        "authorDisplayName": "estiCocus",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 10000,
+        "photo": "/photos/road.jpg",
+        "path": "/videos/road.mp4",
+        
+        "likedBy" : [],
+        "dislikedBy" : []
+    },
+    {
+        
+        "title": "women_reading",
+        "author": "tim12345",
+        "authorDisplayName": "estiCocus",
+        "timeAgo": "01/06/2024, 15:23:20",
+        "views": 11000,
+        "photo": "/photos/women_reading.jpg",
+        "path": "/videos/women_reading.mp4",
+        
+        "likedBy" : [],
+        "dislikedBy" : []
+    }
+]
