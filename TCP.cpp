@@ -12,7 +12,6 @@
 #include <unordered_set>
 
 
-
 std::unordered_map<std::string, std::vector<std::string>> video_watchers;  
 std::unordered_map<std::string, int> video_popularity;  
 std::unordered_map<std::string, std::vector<std::string>> user_watch_history;  
