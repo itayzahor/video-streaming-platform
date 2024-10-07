@@ -1,163 +1,162 @@
 #include <iostream>
+#include <cstring>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
-#include <string.h>
-#include <thread>  // For multithreading
-#include <signal.h> // For signal handling
-#include <bsoncxx/json.hpp>
-#include <mongocxx/client.hpp>
-#include <mongocxx/instance.hpp>
-#include <mongocxx/uri.hpp>
+#include <thread>
+#include <unordered_map>
 #include <vector>
+#include <algorithm>
+#include <string>
 #include <sstream>
+#include <unordered_set>
 
-using namespace std;
 
-volatile sig_atomic_t server_running = 1;
+// Mock database for video recommendations
+std::unordered_map<std::string, std::vector<std::string>> video_watchers;  // video_id -> list of users
+std::unordered_map<std::string, int> video_popularity;  // video_id -> view count
+std::unordered_map<std::string, std::vector<std::string>> user_watch_history;  // user_id -> list of video_ids
 
-// MongoDB instance
-mongocxx::instance instance{};
-// MongoDB client
-mongocxx::client client(mongocxx::uri("mongodb://localhost:27017"));
-// Access the database
-mongocxx::database db = client["view_tube_db"];
-// Access or create the 'userWatchHistory' collection
-mongocxx::collection collection = db["userWatchHistory"];
-
-// Signal handler for graceful shutdown
-void handle_signal(int signal) {
-    if (signal == SIGINT) {
-        server_running = 0;
-    }
+// Function to update watch history
+void update_watch_history(const std::string& user_id, const std::string& video_id) {
+    user_watch_history[user_id].push_back(video_id);
+    video_watchers[video_id].push_back(user_id);
+    video_popularity[video_id]++;
 }
 
-// Function to update the user's watch history in MongoDB
-void updateUserWatchHistory(const std::string& username, int videoId) {
-    bsoncxx::builder::stream::document filter{};
-    filter << "username" << username;
+// Function to get recommendations based on user watch history
+std::vector<std::string> get_recommendations(const std::string& user_id) {
+    std::vector<std::string> recommendations;
+    std::unordered_map<std::string, int> candidate_videos;
 
-    // Find the user in the collection
-    auto userDoc = collection.find_one(filter.view());
+    // Get videos watched by the current user
+    const std::vector<std::string>& watched_videos = user_watch_history[user_id];
+    std::unordered_set<std::string> watched_set(watched_videos.begin(), watched_videos.end());
 
-    if (userDoc) {
-        // If the user exists, update the videoIds list
-        bsoncxx::builder::stream::document update_doc{};
-        update_doc << "$addToSet" << bsoncxx::builder::stream::open_document
-                   << "videoIds" << videoId << bsoncxx::builder::stream::close_document;
-
-        collection.update_one(filter.view(), update_doc.view());
-        cout << "Updated watch history for user: " << username << endl;
-    } else {
-        // If the user doesn't exist, create a new document
-        bsoncxx::builder::stream::document new_user{};
-        new_user << "username" << username
-                 << "videoIds" << bsoncxx::builder::stream::open_array << videoId
-                 << bsoncxx::builder::stream::close_array;
-
-        collection.insert_one(new_user.view());
-        cout << "Inserted new watch history for user: " << username << endl;
-    }
-}
-
-// Function to handle communication with the client
-void handle_client(int client_sock) {
-    char buffer[4096] = {0};  // Initialize buffer to zero
-
-    // Receive data from the client
-    int read_bytes = recv(client_sock, buffer, sizeof(buffer), 0);
-    if (read_bytes == 0) {
-        cout << "Client disconnected" << endl;
-    } else if (read_bytes < 0) {
-        perror("Error receiving data");
-    } else {
-        // buffer contains the video id and the username in the format "username,videoId"
-        cout << "Received from client: " << buffer << endl;
-
-        // Parse the received data to extract username and videoId
-        std::string received_data(buffer);
-        std::stringstream ss(received_data);
-        std::string username;
-        std::string videoIdStr;
-        getline(ss, username, ',');  // Extract username
-        getline(ss, videoIdStr);     // Extract video ID
-
-        int videoId = stoi(videoIdStr);  // Convert video ID to integer
-
-        // Update the user's watch history in MongoDB
-        updateUserWatchHistory(username, videoId);
-
-        // Send a confirmation message back to the client
-        std::string response = "Watch history updated for user: " + username;
-        int sent_bytes = send(client_sock, response.c_str(), response.size(), 0);
-        if (sent_bytes < 0) {
-            perror("Error sending data to client");
+    // Collect videos watched by users who watched the same videos as the current user
+    for (const std::string& video_id : watched_videos) {
+        for (const std::string& other_user : video_watchers[video_id]) {
+            if (other_user == user_id) continue; // Skip the current user
+            for (const std::string& other_video : user_watch_history[other_user]) {
+                if (watched_set.find(other_video) == watched_set.end()) {
+                    candidate_videos[other_video]++;
+                }
+            }
         }
     }
 
-    // Close the client socket after handling communication
-    close(client_sock);
-}
+    // Sort candidate videos by popularity
+    std::vector<std::pair<std::string, int>> sorted_candidates(candidate_videos.begin(), candidate_videos.end());
+    std::sort(sorted_candidates.begin(), sorted_candidates.end(),
+              [](const auto& a, const auto& b) { return b.second > a.second; });
 
-int main() {
-    const int server_port = 5555;
-
-    // Set up signal handler for graceful shutdown
-    signal(SIGINT, handle_signal);
-
-    // Create server socket
-    int sock = socket(AF_INET, SOCK_STREAM, 0);
-    if (sock < 0) {
-        perror("Error creating socket");
-        return -1;
+    // Prepare response with top 6-10 recommendations
+    int count = 0;
+    for (const auto& [vid, _] : sorted_candidates) {
+        if (++count > 10) break;
+        recommendations.push_back(vid);
     }
 
-    // Initialize server address structure
-    struct sockaddr_in sin;
-    memset(&sin, 0, sizeof(sin));  // Zero out the structure
-    sin.sin_family = AF_INET;      // Set address family to IPv4
-    sin.sin_addr.s_addr = INADDR_ANY;  // Accept connections from any IP
-    sin.sin_port = htons(server_port);  // Convert port number to network byte order
+    return recommendations;
+}
 
-    // Bind the socket to the server address and port
-    if (bind(sock, (struct sockaddr *) &sin, sizeof(sin)) < 0) {
-        perror("Error binding socket");
-        close(sock);
-        return -1;
+// Function to handle communication with a client
+void handle_client(int client_sock) {
+    char buffer[4096];
+
+    while (true) {
+        int read_bytes = recv(client_sock, buffer, sizeof(buffer), 0);
+        if (read_bytes <= 0) {
+            break; // Connection closed by client or an error occurred
+        }
+
+        buffer[read_bytes] = '\0'; // Null-terminate the received data
+        std::cout << "Received: " << buffer << std::endl;
+
+        // Parse the message
+        std::string message(buffer);
+        std::string user_id;
+        std::string command;
+        std::string video_id;
+
+        std::istringstream iss(message);
+        iss >> command >> user_id;
+
+        if (command == "user") {
+            // Update watch history
+            iss >> command >> video_id; // Expecting "watched" command
+            if (command == "watched") {
+                update_watch_history(user_id, video_id);
+                std::string response = "Watch event logged for User " + user_id + " and Video " + video_id;
+                send(client_sock, response.c_str(), response.size(), 0);
+            }
+        } else if (command == "recommend") {
+            // Get recommendations
+            std::vector<std::string> recommendations = get_recommendations(user_id);
+
+            // Prepare response: top 6-10 videos
+            std::string response = "Recommended videos: ";
+            for (const std::string& vid : recommendations) {
+                response += vid + " ";
+               std::cout << "is is " << vid << std::endl;
+
+
+            }
+            send(client_sock, response.c_str(), response.size(), 0);
+        } else {
+            std::string response = "Unknown command";
+            send(client_sock, response.c_str(), response.size(), 0);
+        }
+    }
+
+    close(client_sock); // Close the client socket when done
+}
+
+// Main function to set up and run the server
+int main() {
+    const int server_port = 5551; // Port number for the server
+
+    // Create a TCP socket
+    int server_sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (server_sock == -1) {
+        std::cerr << "Error creating socket." << std::endl;
+        return 1;
+    }
+
+    // Define the server address and port
+    sockaddr_in server_addr;
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_addr.s_addr = INADDR_ANY; // Accept connections from any IP address
+    server_addr.sin_port = htons(server_port); // Set the port number
+
+    // Bind the socket to the specified address and port
+    if (bind(server_sock, (sockaddr*)&server_addr, sizeof(server_addr)) == -1) {
+        std::cerr << "Error binding socket." << std::endl;
+        close(server_sock);
+        return 1;
     }
 
     // Start listening for incoming connections
-    if (listen(sock, 5) < 0) {
-        perror("Error listening on socket");
-        close(sock);
-        return -1;
+    if (listen(server_sock, SOMAXCONN) == -1) {
+        std::cerr << "Error listening on socket." << std::endl;
+        close(server_sock);
+        return 1;
     }
 
-    cout << "Server is listening on port " << server_port << "..." << endl;
+    std::cout << "Server is listening on port " << server_port << std::endl;
 
-    while (server_running) {
-        // Accept incoming client connections
-        struct sockaddr_in client_sin;
-        unsigned int addr_len = sizeof(client_sin);
-        int client_sock = accept(sock, (struct sockaddr *) &client_sin, &addr_len);
-        if (client_sock < 0) {
-            if (server_running) {
-                perror("Error accepting client connection");
-            }
-            continue; // Continue accepting new connections
+    // Main loop to accept and handle client connections
+    while (true) {
+        int client_sock = accept(server_sock, nullptr, nullptr); // Accept a new client connection
+        if (client_sock == -1) {
+            std::cerr << "Error accepting client." << std::endl;
+            continue; // Continue to the next iteration to accept another client
         }
 
         // Create a new thread to handle the client
-        thread client_thread(handle_client, client_sock);
-
-        // Detach the thread so it runs independently
-        client_thread.detach();
+        std::thread(handle_client, client_sock).detach();
     }
 
-    // Close the server socket
-    close(sock);
-
-    cout << "Server shut down gracefully." << endl;
-
-    return 0;
+    close(server_sock); // Close the server socket (this line will never be reached)
+   return 0;
 }

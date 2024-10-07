@@ -3,14 +3,22 @@ const videosController = require('../controllers/videos');
 
 var router = express.Router();
 
-// Route for getting all videos and creating a new video
-router.route('/')
-    .get(videosController.getVideos) // Get all videos
+router.route('/top-videos') // Endpoint for getting top viewed videos and 10 random videos
+    .get(videosController.getTopVideos); // Get top viewed videos
+
+router.route('/tcp-videos') // Endpoint for getting recommended videos from TCP and 10 random videos
+    .get(videosController.getTcpVideos); // Get recommended videos from TCP
 
 // Route for getting, updating, and deleting a specific video by its ID
 router.route('/:id')
-    .get(videosController.getVideo) // Get a specific video
     .patch(videosController.updateVideo) // Update a specific video
+
+// Separate route for guests
+router.get('/guest/:id', videosController.guestWatchVideo);
+
+// Separate route for authenticated users with authentication middleware
+router.get('/user/:id', authenticateUser, videosController.userWatchVideo);
+
 
 // Route for getting all videos that start with a specific prefix
 router.route('/prefix/:prefix')
