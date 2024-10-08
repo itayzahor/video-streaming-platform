@@ -18,10 +18,7 @@ const createVideo = async (title, author, path, photo) => {
     }
 };
 const getVideoById = async (id) => { return await Video.findById(id); };
-const getVideos = async () => {
-    const videos = await Video.find({});
-    return getTopAndRandomVideos(videos);
-};
+
 const updateVideo = async (id, views, likedBy, dislikedBy) => {
     const update = {
         views: views,
@@ -93,7 +90,14 @@ const getVideosByAuthor = async (username) => {
 }
 
 
-
+const getTopVideos = async () => {
+    const videos = await Video.find({});
+    return getTopAndRandomVideos(videos);
+};
+const getTcpVideos = async () => {
+    const videos = await Video.find({});
+    return getTcpAndRandomVideos(videos);
+};
 
 const getTopAndRandomVideos = (videosArray) => {
     // Sort videos by views in descending order and take the top 10
@@ -113,6 +117,99 @@ const getTopAndRandomVideos = (videosArray) => {
     // Combine top 10 and random 10
     return [...top10Videos, ...random10Videos];
 };
+const net = require('net');
+
+// Function to get recommendations from the TCP server
+const getRecommendationsFromTCP = (userId) => {
+    return new Promise((resolve, reject) => {
+        // Create a TCP client
+        const client = new net.Socket();
+
+        // Define the TCP server address and port
+        const tcpServerAddress = '127.0.0.1'; 
+        const tcpServerPort = 5551;
+
+        // Connect to the TCP server
+        client.connect(tcpServerPort, tcpServerAddress, () => {
+            console.log('Connected to TCP server');
+
+            // Send the request for recommendations
+            client.write(`recommend ${userId}`);
+        });
+
+        // Handle incoming data from the server
+        client.on('data', (data) => {
+            console.log('Received from server:', data.toString());
+            // Parse the received data and resolve the promise
+            const recommendations = data.toString().match(/Recommended videos: (.+)/);
+            if (recommendations) {
+                resolve(recommendations[1].trim().split(' ')); // Split by space to get individual video IDs
+            } else {
+                resolve([]); // No recommendations found
+            }
+            client.destroy(); // Close the connection
+        });
+
+        // Handle errors
+        client.on('error', (error) => {
+            console.error('Error connecting to TCP server:', error);
+            reject(error);
+        });
+
+        // Handle the close event
+        client.on('close', () => {
+            console.log('Connection closed');
+        });
+    });
+};
+
+const getTcpAndRandomVideos = async (userId) => {
+    try {
+        // Fetch top videos from the TCP server
+        const tcpVideos = await getRecommendationsFromTCP(userId);
+
+        const remainingVideos = videosArray.filter(video => !tcpVideos.includes(video));
+
+        // Shuffle the remaining videos to select 10 random ones
+        const shuffledVideos = remainingVideos.sort(() => 0.5 - Math.random());
+
+        // Take the first 10 random videos
+        const random10Videos = shuffledVideos.slice(0, 10);
+
+        // Combine top 10 and random 10
+        return [...tcpVideos, ...random10Videos];
+    } catch (error) {
+        console.error('Error fetching combined videos:', error);
+        return []; // Return an empty array or handle the error as needed
+    }
+};
+
+const notifyTcpServer = async (userId, videoId) => {
+    // Your existing TCP client logic to notify the server
+    const client = new net.Socket();
+    const tcpServerAddress = '127.0.0.1'; 
+    const tcpServerPort = 5551;
+
+    return new Promise((resolve, reject) => {
+        client.connect(tcpServerPort, tcpServerAddress, () => {
+            console.log('Connected to TCP server');
+            client.write(`user ${userId} watched ${videoId}`);
+        });
+
+        client.on('data', (data) => {
+            console.log('Received from TCP server:', data.toString());
+            resolve();
+            client.destroy();
+        });
+
+        client.on('error', (error) => {
+            console.error('Error connecting to TCP server:', error);
+            reject(error);
+        });
+    });
+};
 
 
-module.exports = { updateVideoTitle,remFromVideoLikesDislikes, updateVideoDisplayName, createVideo, getVideosByAuthor, getVideoById, getVideos, updateVideo, deleteVideo, getVideosByPrefix, deleteUsersVideos }
+
+
+module.exports = { notifyTcpServer, updateVideoTitle,remFromVideoLikesDislikes, updateVideoDisplayName, createVideo, getVideosByAuthor, getVideoById, getTopVideos,getTcpVideos, updateVideo, deleteVideo, getVideosByPrefix, deleteUsersVideos }
