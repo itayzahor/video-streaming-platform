@@ -87,6 +87,7 @@ void handle_client(int client_sock) {
             iss >> command >> video_id; // Expecting "watched" command
             if (command == "watched") {
                 update_watch_history(user_id, video_id);
+                std::cout << "Watch event logged for User " << user_id << " and Video " << video_id << std::endl;
                 std::string response = "Watch event logged for User " + user_id + " and Video " + video_id;
                 send(client_sock, response.c_str(), response.size(), 0);
             }
