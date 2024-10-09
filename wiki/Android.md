@@ -132,9 +132,23 @@ This page provides users with full control over their profile and uploaded conte
 
 
 ## Delete video explain
+The Delete Video feature allows users to remove any video they have uploaded with the following behaviors:
+
+* Video Removal: Once a video is deleted, it will immediately disappear from the video list and the user’s profile page.
+
+* Updated Views: The video will also be removed from the Add Video Page and Profile Page lists, reflecting the updated status in real-time.
+
+This ensures that users can efficiently manage their uploaded videos, with instant feedback on deletions.
+
+# Delete Video Views
+
+| <img src="Screenshot_2024-10-09-11-17-17-90_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-37-25_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-23-82_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-30-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| The video exists in search | After deletion, it disappeared from search | Video exists in profile | After deletion, it disappeared from profile |
 
 
-# Delete video Views
+
+
 
 
 
