@@ -1,13 +1,19 @@
 ### How to run the Android application:
 Download the Server-part4 folder and open it in Visual Studio Code (VSCode).
 
-his folder contains the server code for the Web application, which is also adjusted to work with the TCP server.
+this folder contains the server code for the Web application, which is also adjusted to work with the TCP server.
 
-.............
+after donloading the server you need to run this code: nmp start - and it needs to look like this:
+
+![alt text](<Screenshot 2024-10-08 210317.png>)
 
 Download the Android application from this GitHub repository: [GitHub Repo](https://github.com/theComputerGu/AndroidYouTube/tree/main-part4)
 
-and open it using Android Studio. Instructions on how to open the project can be found in the repository.
+and open it using Android Studio. Instructions on how to open and set up the project can be found in the repository [GitHub Repo](https://github.com/theComputerGu/AndroidYouTube/tree/main-part4).
+
+after set up the android code and run it need to look like this:
+
+![alt text](<Screenshot 2024-10-09 012017.png>)
 
 Now, download the TCP.cpp file and put it in WSL (Windows Subsystem for Linux) in VSCode. Compile it using the following command:
 
@@ -19,4 +25,9 @@ Then, run the TCP server using this command:
 ```sh
 ./tcp
 ```
+
+like this:
+
+![alt text](<Screenshot 2024-10-08 205933.png>)
+
 After that, run the Android server you downloaded earlier, and then run the Android application.
