@@ -1,9 +1,9 @@
 ### How to run the Android application:
 Download the Server-part4 folder and open it in Visual Studio Code (VSCode).
 
-this folder contains the server code for the Web application, which is also adjusted to work with the TCP server.
+this folder contains the server code for the Android application, which is also adjusted to work with the TCP server.
 
-after donloading the server you need to run this code: nmp start - and it needs to look like this:
+after downloading the server you need to run this code: nmp start - and it needs to look like this:
 
 ![alt text](<Screenshot 2024-10-08 210317.png>)
 
@@ -30,4 +30,4 @@ like this:
 
 ![alt text](<Screenshot 2024-10-08 205933.png>)
 
-After that, run the Android server you downloaded earlier, and then run the Android application.
+
