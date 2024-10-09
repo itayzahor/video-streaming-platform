@@ -81,3 +81,58 @@ The Sign Up Page allows users to create a new account with the following feature
 
 
 
+
+
+
+
+
+
+
+
+## Add Video Page
+The Add Video Page allows users to upload and manage their videos with the following features:
+
+* Add Video Details: Users can add the name of the video, a thumbnail image, and the video file itself.
+* View Uploaded Videos: Users can see all the videos they have previously uploaded in a list.
+* Delete Videos: Users have the option to delete any video they have uploaded.
+* Add More Videos: Users can upload additional videos at any time.
+
+This page provides an easy way to manage and update video content, making it simple for users to organize their uploaded videos.
+
+
+
+# Add Video Views
+
+
+| <img src="Screenshot_2024-10-09-10-59-23-73_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-59-56-76_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-00-02-03_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| Add video page | Choose the video, name, and thumbnail | Video added |
+
+
+
+
+
+## Profile Page
+
+
+# Profile Views
+
+
+
+## Delete video explain
+
+
+# Delete video Views
+
+
+
+## Add video explain
+
+
+# Add video Views
+
+
+## Edit video explain
+
+
+# Edit video Views
