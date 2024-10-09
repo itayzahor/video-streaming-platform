@@ -37,4 +37,23 @@ The Watch Video page provides several useful features, including:
 
 
 
+## Sign In Page
+The Sign Page allows you to log in to an existing one with the following validations:
+
+
+* If the username is incorrect or does not exist, an alert will notify you that the user was not found.
+* If the password is incorrect, an alert will notify you to check your password and try again.
+* These validations ensure that account creation and login processes are secure and user-friendly.
+
+
+
+# Sign In Views
+
+| <img src="Screenshot_2024-10-09-10-56-49-49_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-15-50_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-26-61_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| Regular | Sign in | You can see the user's photo after signing in |
+
+
+
+
 
