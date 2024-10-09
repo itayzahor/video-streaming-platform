@@ -57,3 +57,27 @@ The Sign Page allows you to log in to an existing one with the following validat
 
 
 
+
+
+
+## Sign UP Page
+The Sign Up Page allows users to create a new account with the following features:
+
+* Username Availability: If the username is already taken, an alert will notify the user to choose a different name.
+* Password Strength: If the password is too weak, an alert will suggest creating a stronger password (e.g., using a mix of letters, numbers, and special characters).
+* Password Confirmation: If the password does not match the confirmation field, an alert will notify the user to re-enter the passwords.
+* User-Friendly Design: The interface is intuitive, making the sign-up process smooth and efficient, with clear guidance at each step.
+* User Photo: Users can upload a profile picture during sign-up, making the experience more personalized.
+
+
+
+# Sign Up Views
+
+| <img src="Screenshot_2024-10-09-10-57-55-86_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-58-07-84_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-26-61_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| Sign up page | Success message after account creation | Profile photo displayed after signing up |
+
+
+
+
+
