@@ -180,7 +180,7 @@ This feature provides flexibility for users to keep their video content up to da
 
 # Edit video Views
 
-| <img src="Screenshot_2024-10-09-11-00-10-19_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+| <img src="Screenshot_2024-10-09-11-00-10-19_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> |
 |:------------------------------------------------------------:|
 | Changing the name of the video |
 
