@@ -171,6 +171,17 @@ This ensures that uploaded videos are easily accessible across the platform, enh
 
 
 ## Edit video explain
+The Edit Video feature allows users to manage their uploaded videos with the following options:
 
+* Change Video Name: Users can modify the name of any video they’ve uploaded. The updated name will be reflected everywhere, including the video list and the Watch Video page.
+* Delete Video: Users have the option to delete their uploaded videos.
+* Replace Video: Users can upload a new video file to replace the existing one.
+This feature provides flexibility for users to keep their video content up to date and ensures that all changes are reflected across the platform.
 
 # Edit video Views
+
+| <img src="Screenshot_2024-10-09-11-00-10-19_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|
+| Changing the name of the video |
+
+
