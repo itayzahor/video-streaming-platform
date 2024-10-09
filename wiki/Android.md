@@ -113,9 +113,21 @@ This page provides an easy way to manage and update video content, making it sim
 
 
 ## Profile Page
+The Profile Page allows users to manage their account and videos with the following features:
 
+* View User Details: Users can see their profile information, including their username and profile picture.
+* Edit Username: Users can change their username directly from the profile page.
+* View Uploaded Videos: Users can view all the videos they have uploaded.
+* Delete Videos: Users have the ability to delete any of their uploaded videos.
+* Sign Out: Users can sign out of their account from this page.
+This page provides users with full control over their profile and uploaded content, making it easy to manage their account and media.
 
 # Profile Views
+
+
+| <img src="Screenshot_2024-10-09-11-17-23-82_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-30-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| Profile Page | Deleting video from the profile page |
 
 
 
