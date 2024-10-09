@@ -150,12 +150,24 @@ This ensures that users can efficiently manage their uploaded videos, with insta
 
 
 
-
-
 ## Add video explain
+The Add Video feature allows users to upload a video with the following behaviors:
+
+* Visibility Across Pages: Once a video is added, it will be visible to everyone in multiple sections:
+Watch Video Page: The video can be viewed by others on the platform.
+* Search: The video will appear in search results, allowing users to find it by title.
+* Profile Page: The video will be listed under the user’s uploaded videos in their profile.
+This ensures that uploaded videos are easily accessible across the platform, enhancing the content visibility.
 
 
-# Add video Views
+# Add Video Views
+
+| <img src="Screenshot_2024-10-09-11-19-24-84_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-20-16-67_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| Video added and visible in the list | Watch the video on the watch page |
+
+
+
 
 
 ## Edit video explain
