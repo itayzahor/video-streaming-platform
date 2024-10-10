@@ -33,7 +33,7 @@ The Watch Video page provides several useful features, including:
 
 # Watch VideoViews
 
-| <img src="Screenshot_2024-10-09-10-58-51-62_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-55-45-21_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-59-12-63_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-58-59-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 215901.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215941.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220310.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220322.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Regular | Dark mode | Add comment | Erase comment |
 
