@@ -107,7 +107,7 @@ This page provides an easy way to manage and update video content, making it sim
 # Add Video Views
 
 
-| <img src="Screenshot_2024-10-09-10-59-23-73_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-59-56-76_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-00-02-03_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 220605.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220928.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220939.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Add video page | Choose the video, name, and thumbnail | Video added |
 
