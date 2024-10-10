@@ -165,7 +165,7 @@ This ensures that uploaded videos are easily accessible across the platform, enh
 
 # Add Video Views
 
-| <img src="Screenshot_2024-10-09-11-19-24-84_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-20-16-67_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 221213.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221306.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Video added and visible in the list | Watch the video on the watch page |
 
@@ -183,7 +183,7 @@ This feature provides flexibility for users to keep their video content up to da
 
 # Edit video Views
 
-| <img src="Screenshot_2024-10-09-11-00-10-19_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 221332.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|
 | Changing the name of the video |
 
