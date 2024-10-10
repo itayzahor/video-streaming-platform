@@ -165,7 +165,7 @@ This ensures that uploaded videos are easily accessible across the platform, enh
 
 # Add Video Views
 
-| <img src="Screenshot 2024-10-10 221213.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221306.png" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 221306.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221213.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Video added and visible in the list | Watch the video on the watch page |
 
