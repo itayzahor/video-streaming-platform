@@ -76,7 +76,7 @@ The Sign Up Page allows users to create a new account with the following feature
 
 # Sign Up Views
 
-| <img src="Screenshot_2024-10-09-10-57-55-86_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-58-07-84_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-26-61_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 220450.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220537.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220425.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Sign up page | Success message after account creation | Profile photo displayed after signing up |
 
