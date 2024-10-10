@@ -128,9 +128,9 @@ This page provides users with full control over their profile and uploaded conte
 # Profile Views
 
 
-| <img src="Screenshot_2024-10-09-11-17-23-82_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-30-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 221001.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221029.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
-| Profile Page | Deleting video from the profile page |
+| Profile Page | changing name in profile page |
 
 
 
