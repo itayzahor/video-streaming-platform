@@ -52,7 +52,7 @@ The Sign Page allows you to log in to an existing one with the following validat
 
 # Sign In Views
 
-| <img src="Screenshot_2024-10-09-10-56-49-49_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-15-50_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-26-61_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+| <img src="Screenshot 2024-10-10 220350.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220411.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220425.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Regular | Sign in | You can see the user's photo after signing in |
 
