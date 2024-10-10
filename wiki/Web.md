@@ -1,4 +1,7 @@
 # Web App Demonstration
+### The images below may appear large, affecting their layout. For the best experience, simply click on any image to view it in full size. This will open the image in its actual resolution and provide a clearer view of the content.
+
+
 ## Home Page
 The Home Page offers a variety of useful features, including:
 
@@ -8,7 +11,7 @@ The Home Page offers a variety of useful features, including:
 
 # Home Page Views
 
-| <img src="Screenshot 2024-10-10 215740.png" width="500" height="800"/> | <img src="Screenshot 2024-10-10 215815.png" width="500" height="800"/> | 
+| <img src="Screenshot 2024-10-10 215740.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215815.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215838.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Home page standard | Dark mode | Search |
 
