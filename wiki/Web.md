@@ -145,9 +145,9 @@ This ensures that users can efficiently manage their uploaded videos, with insta
 
 # Delete Video Views
 
-| <img src="Screenshot_2024-10-09-11-17-17-90_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-37-25_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-23-82_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-30-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
-|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
-| The video exists in search | After deletion, it disappeared from search | Video exists in profile | After deletion, it disappeared from profile |
+| <img src="Screenshot 2024-10-10 221058.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221121.png" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| The video exists in search | After deletion, it disappeared from search |
 
 
 
