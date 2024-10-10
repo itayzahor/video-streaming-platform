@@ -8,7 +8,7 @@ The Home Page offers a variety of useful features, including:
 
 # Home Page Views
 
-| <img src="Screenshot 2024-10-10 215740.png" width="500" height="800"/> | <img src="Screenshot 2024-10-10 215815.png" width="500" height="800"/> | <img src="Screenshot 2024-10-10 215838.png" width="800" height="400"/> |
+| <img src="Screenshot 2024-10-10 215740.png" width="500" height="800"/> | <img src="Screenshot 2024-10-10 215815.png" width="500" height="800"/> | 
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Home page standard | Dark mode | Search |
 
