@@ -3,6 +3,7 @@ Download the Server-part4 folder and open it in Visual Studio Code (VSCode).
 
 this folder contains the server code for the Web application, which is also adjusted to work with the TCP server.
 
+
 navigate to the "Server-part4" folder
 create "config" folder
 create a file named ".env.local" under the config folder and fill it with:
@@ -21,6 +22,7 @@ after downloading the server you need to run this code: "npm i" then "npm start"
 
 
 now you can open your browser on http://localhost:12345/ and see the website
+
 
 Now, download the TCP.cpp file and put it in WSL (Windows Subsystem for Linux) in VSCode. Compile it using the following command:
 

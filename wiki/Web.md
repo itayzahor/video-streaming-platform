@@ -1,4 +1,8 @@
-# Android App Demonstration
+
+# Web App Demonstration
+### **The images below may appear large, affecting their layout. For the best experience, simply click on any image to view it in full size. This will open the image in its actual resolution and provide a clearer view of the content.**
+
+
 ## Home Page
 The Home Page offers a variety of useful features, including:
 
@@ -8,7 +12,9 @@ The Home Page offers a variety of useful features, including:
 
 # Home Page Views
 
-| <img src="Screenshot_2024-10-09-10-54-56-12_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-55-16-21_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-56-33-23_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 215740.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215815.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215838.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Home page standard | Dark mode | Search |
 
@@ -22,6 +28,9 @@ The Home Page offers a variety of useful features, including:
 The Watch Video page provides several useful features, including:
 
 * A video list displaying all available videos on the platform.
+
+* The ability to watch videos, pause, skip forward, and rewind.
+
 * Options to add, edit, and delete comments.
 * The ability to like or dislike videos.
 * A view counter showing how many people have watched the video.
@@ -29,7 +38,9 @@ The Watch Video page provides several useful features, including:
 
 # Watch VideoViews
 
-| <img src="Screenshot_2024-10-09-10-58-51-62_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-55-45-21_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-59-12-63_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-58-59-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 215901.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215941.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220310.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220322.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Regular | Dark mode | Add comment | Erase comment |
 
@@ -48,7 +59,9 @@ The Sign Page allows you to log in to an existing one with the following validat
 
 # Sign In Views
 
-| <img src="Screenshot_2024-10-09-10-56-49-49_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-15-50_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-26-61_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 220350.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220411.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220425.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Regular | Sign in | You can see the user's photo after signing in |
 
@@ -72,7 +85,9 @@ The Sign Up Page allows users to create a new account with the following feature
 
 # Sign Up Views
 
-| <img src="Screenshot_2024-10-09-10-57-55-86_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-58-07-84_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-05-26-61_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 220450.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220537.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220425.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Sign up page | Success message after account creation | Profile photo displayed after signing up |
 
@@ -103,7 +118,9 @@ This page provides an easy way to manage and update video content, making it sim
 # Add Video Views
 
 
-| <img src="Screenshot_2024-10-09-10-59-23-73_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-10-59-56-76_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-00-02-03_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 220605.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220928.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220939.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Add video page | Choose the video, name, and thumbnail | Video added |
 
@@ -124,9 +141,11 @@ This page provides users with full control over their profile and uploaded conte
 # Profile Views
 
 
-| <img src="Screenshot_2024-10-09-11-17-23-82_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-30-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 221001.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221029.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
-| Profile Page | Deleting video from the profile page |
+| Profile Page | changing name in profile page |
+
 
 
 
@@ -141,9 +160,11 @@ This ensures that users can efficiently manage their uploaded videos, with insta
 
 # Delete Video Views
 
-| <img src="Screenshot_2024-10-09-11-17-17-90_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-37-25_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-23-82_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-17-30-39_ee015900260ab508ba0bf0f18dc28a83.jpg" width="auto" height="400"/> |
-|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
-| The video exists in search | After deletion, it disappeared from search | Video exists in profile | After deletion, it disappeared from profile |
+
+| <img src="Screenshot 2024-10-10 221058.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221121.png" width="auto" height="400"/> |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| The video exists in search | After deletion, it disappeared from search |
+
 
 
 
@@ -161,7 +182,9 @@ This ensures that uploaded videos are easily accessible across the platform, enh
 
 # Add Video Views
 
-| <img src="Screenshot_2024-10-09-11-19-24-84_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> | <img src="Screenshot_2024-10-09-11-20-16-67_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 221306.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221213.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Video added and visible in the list | Watch the video on the watch page |
 
@@ -179,7 +202,8 @@ This feature provides flexibility for users to keep their video content up to da
 
 # Edit video Views
 
-| <img src="Screenshot_2024-10-09-11-00-10-19_ee015900260ab508ba0bf0f18dc28a83 (1).jpg" width="auto" height="400"/> |
+
+| <img src="Screenshot 2024-10-10 221332.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|
 | Changing the name of the video |
 
