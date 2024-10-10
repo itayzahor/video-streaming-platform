@@ -1,3 +1,4 @@
+
 # Web App Demonstration
 ### **The images below may appear large, affecting their layout. For the best experience, simply click on any image to view it in full size. This will open the image in its actual resolution and provide a clearer view of the content.**
 
@@ -11,7 +12,9 @@ The Home Page offers a variety of useful features, including:
 
 # Home Page Views
 
+
 | <img src="Screenshot 2024-10-10 215740.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215815.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215838.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Home page standard | Dark mode | Search |
 
@@ -25,7 +28,9 @@ The Home Page offers a variety of useful features, including:
 The Watch Video page provides several useful features, including:
 
 * A video list displaying all available videos on the platform.
+
 * The ability to watch videos, pause, skip forward, and rewind.
+
 * Options to add, edit, and delete comments.
 * The ability to like or dislike videos.
 * A view counter showing how many people have watched the video.
@@ -33,7 +38,9 @@ The Watch Video page provides several useful features, including:
 
 # Watch VideoViews
 
+
 | <img src="Screenshot 2024-10-10 215901.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 215941.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220310.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220322.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Regular | Dark mode | Add comment | Erase comment |
 
@@ -52,7 +59,9 @@ The Sign Page allows you to log in to an existing one with the following validat
 
 # Sign In Views
 
+
 | <img src="Screenshot 2024-10-10 220350.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220411.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220425.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Regular | Sign in | You can see the user's photo after signing in |
 
@@ -76,7 +85,9 @@ The Sign Up Page allows users to create a new account with the following feature
 
 # Sign Up Views
 
+
 | <img src="Screenshot 2024-10-10 220450.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220537.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220425.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Sign up page | Success message after account creation | Profile photo displayed after signing up |
 
@@ -107,7 +118,9 @@ This page provides an easy way to manage and update video content, making it sim
 # Add Video Views
 
 
+
 | <img src="Screenshot 2024-10-10 220605.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220928.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 220939.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Add video page | Choose the video, name, and thumbnail | Video added |
 
@@ -128,9 +141,11 @@ This page provides users with full control over their profile and uploaded conte
 # Profile Views
 
 
+
 | <img src="Screenshot 2024-10-10 221001.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221029.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Profile Page | changing name in profile page |
+
 
 
 
@@ -145,9 +160,11 @@ This ensures that users can efficiently manage their uploaded videos, with insta
 
 # Delete Video Views
 
+
 | <img src="Screenshot 2024-10-10 221058.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221121.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
 | The video exists in search | After deletion, it disappeared from search |
+
 
 
 
@@ -165,7 +182,9 @@ This ensures that uploaded videos are easily accessible across the platform, enh
 
 # Add Video Views
 
+
 | <img src="Screenshot 2024-10-10 221306.png" width="auto" height="400"/> | <img src="Screenshot 2024-10-10 221213.png" width="auto" height="400"/> |
+
 |:------------------------------------------------------------:|:------------------------------------------------------------:|
 | Video added and visible in the list | Watch the video on the watch page |
 
@@ -182,6 +201,7 @@ The Edit Video feature allows users to manage their uploaded videos with the fol
 This feature provides flexibility for users to keep their video content up to date and ensures that all changes are reflected across the platform.
 
 # Edit video Views
+
 
 | <img src="Screenshot 2024-10-10 221332.png" width="auto" height="400"/> |
 |:------------------------------------------------------------:|
